@@ -11,7 +11,7 @@ namespace C0888888
 
             var b = new birthday_party();
             b.setupPartyList();
-            b.printPartyList();
+            Console.WriteLine(b.printPartyList());
             
         }
     }
@@ -96,6 +96,7 @@ namespace C0888888
             while (temporary.next_dog != null)
             {
                 inviteList += temporary.dog_name + " * --- * ";
+                temporary = temporary.next_dog; 
             }
 
             return inviteList;
