@@ -18,7 +18,7 @@ namespace C0888888
         public void PlayingWithForLoops()
         {
             // write a For Loop to Add 10 Numbers
-            for ( ; MyMethod() ;  )
+            while ( MyMethod() )
             {
                 if (myFavoriteVariable > 10)
                 {
@@ -33,5 +33,31 @@ namespace C0888888
             myFavoriteVariable++;
             return true;
         }
+    }
+
+    class dog
+    {
+        public dog(string name, string breed)
+        {
+            dog_name = name;
+            dog_breed = breed;
+        }
+
+        public string dog_name;
+        public string dog_breed;
+        public dog next_dog;
+        public dog prev_dog;
+
+    }
+    class birthday_party
+    {
+        public dog peanut;
+        public dog fifi;
+        public dog clarence;
+        public dog roy;
+
+        public dog head;
+        public dog tail;
+        public dog temporary;
     }
 }
