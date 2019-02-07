@@ -7,7 +7,12 @@ namespace C0888888
         static void Main(string[] args)
         {
             var a = new TestQuestion2();
-            a.PlayingWithForLoops();
+            //a.PlayingWithForLoops();
+
+            var b = new birthday_party();
+            b.setupPartyList();
+            b.printPartyList();
+            
         }
     }
 
@@ -53,6 +58,7 @@ namespace C0888888
         public dog prev_dog;
 
     }
+
     class birthday_party
     {
         public dog peanut;
@@ -81,7 +87,18 @@ namespace C0888888
             roy.next_dog = null;
             head = peanut;
             tail = roy;
+        }
 
+        public string printPartyList()
+        {
+            string inviteList = "*--";
+            temporary = head;
+            while (temporary.next_dog != null)
+            {
+                inviteList += temporary.dog_name + " * --- * ";
+            }
+
+            return inviteList;
         }
 
     }
